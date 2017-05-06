@@ -67,7 +67,7 @@ nav a:hover {
 
 /* header */
 
-#masthead {
+#main-header {
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -128,8 +128,8 @@ footer {
 
 .sidebar {
   float: right;
-  width: 100%;
-  max-width: 270px;
+  width: 100%; 
+  max-width: 270px; 
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -159,6 +159,7 @@ h3,
 
 #main-container {
   padding-top: 130px;
+  overflow: auto;
 }
 
 .main-section {
@@ -176,18 +177,14 @@ h3,
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  width: 47%;
   margin: 20px 0 25px;
   overflow: auto;
 }
 
-.work:nth-child(even) {
-  margin-right: 40px;
-}
-
 .work img {
   width: 100%;
-  height: 188px;
+  height: 100%;
   border: 0 none;
   opacity: 0.8;
 }
@@ -205,6 +202,10 @@ h3,
   background: #4aaaa5;
   border-bottom: 0;
 }
+
+.work:nth-child(even) {
+      margin-right: 6%;
+    }
 
 .auth-image {
   float: left;
@@ -253,3 +254,87 @@ input[type=submit] {
   background: #4aaaa5;
   border: 0 none;
 }
+
+/* media queries */
+
+@media screen and (max-width: 640px) {
+
+/* about page */
+
+  #main-header {
+    position: static;
+    text-align: center;
+    margin: 0;
+  }
+
+  #logo {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  #main-container {
+    padding: 20px;
+  }
+
+
+
+  /* portfolio page */
+
+  .work {
+    width: 100%;
+    height: auto;
+    margin: 10px 0 10px 0;
+  }
+
+  .work:nth-child(5) {
+    margin-bottom: 5px;
+  }
+
+  .work:nth-child(even) {
+      margin-right: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+  .main-section, .sidebar {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  }
+
+
+@media screen and (max-width: 980px) {
+
+  #main-container {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left:20px;
+  }
+
+
+ nav a {
+    margin-right: 15px;
+  } 
+
+}
+
+@media screen and (min-width: 960px) {
+  .main-section{
+    
+  }
+}
+
+
+
+
+
+
