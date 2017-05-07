@@ -13,10 +13,11 @@ body {
 /* general */
 
 .profile {
-    height: auto;
-    width: 204px;
-    float: left;
-    margin: .5em 1em 0 0;
+  float: left;
+  width: 200px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 25px;
 }
 
 .container {
@@ -80,8 +81,6 @@ nav a:hover {
 
 #logo {
   float: left;
-  width: 250px;
-  height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
@@ -127,9 +126,8 @@ footer {
 /* sidebar */
 
 .sidebar {
-  float: right;
-  width: 100%; 
-  max-width: 270px; 
+  width: 100%;
+  float: right; 
   padding: 30px;
   margin-bottom: 20px;
   background: #fff;
@@ -158,14 +156,12 @@ h3,
 /* main */
 
 #main-container {
-  padding-top: 130px;
   overflow: auto;
 }
 
 .main-section {
   float: left;
   width: 100%;
-  max-width: 650px;
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -177,7 +173,6 @@ h3,
 .work {
   position: relative;
   float: left;
-  width: 47%;
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -203,9 +198,7 @@ h3,
   border-bottom: 0;
 }
 
-.work:nth-child(even) {
-      margin-right: 6%;
-    }
+
 
 
 
@@ -251,14 +244,15 @@ input[type=submit] {
 
 /* media queries */
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 768px) {
 
-/* about page */
+  #main-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   #main-header {
     position: static;
-    text-align: center;
-    margin: 0;
   }
 
   #logo {
@@ -270,69 +264,118 @@ input[type=submit] {
     text-align: center;
   }
 
-  #main-container {
-    padding: 20px;
-  }
-
-
-
-  /* portfolio page */
-
-  .work {
+  .profile {
     width: 100%;
-    height: auto;
-    margin: 10px 0 10px 0;
   }
 
-  .work:nth-child(5) {
-    margin-bottom: 5px;
-  }
-
-  .work:nth-child(even) {
-      margin-right: 0;
-    }
-
-}
-
-@media screen and (max-width: 768px) {
-
-
-  .main-section, .sidebar {
-    width: 100%;
-    max-width: 100vw;
-  }
-
-  }
-
-
-@media screen and (max-width: 980px) {
-
-  #main-container {
-    width: 100%;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left:20px;
-  }
-
-
- nav a {
-    margin-right: 15px;
-  } 
-
-}
-
-@media screen and (min-width: 768px) {
-  .main-section{
-   width: 100%;
-  }
-}
-
-
-@media screen and (min-width: 980px) {
   .main-section {
     width: 100%;
   }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  
+
 }
+
+@media screen and (min-width: 769px) {
+
+  #main-header {
+    position: fixed;
+  }
+
+  #main-container {
+    padding-top: 130px;
+    margin:;
+}
+
+  #logo {
+    width: 250px;
+    height: 90px;
+    margin-left: 10%;
+  }
+
+  nav {
+    width: auto;
+    margin-right: 10%;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+
+  
+  .sidebar {
+    width: 30%;
+    max-width: 270px;
+    min-width: 260px;
+    margin-right: 10%;
+  }
+
+  .work {
+    width:100%;
+  }
+
+  .main-section {
+    width: 45%;
+    margin-left: 10%;
+  }
+
+
+
+
+
+@media screen and (min-width: 1024px) {
+
+  #main-container {
+    width: 100%;
+  }
+
+  .main-section {
+  float: left;
+  width: 100%;
+  max-width: 650px;
+  margin-left: 0;
+}
+
+  .sidebar {
+  float: right;
+  width: 100%;
+  max-width: 270px;
+  margin-right: 0;
+}
+
+.work {
+  position: relative;
+  float: left;
+  width: 274px;
+  margin: 20px 0 25px;
+  overflow: auto;
+}
+
+.work:nth-child(even) {
+  margin-right: 40px;
+}
+
+#logo {
+  margin: 0;
+}
+  
+nav {
+  margin-right: 0;
+}
+
+}
+
+
+
+
+
+
+
+
 
 
 
