@@ -207,13 +207,7 @@ h3,
       margin-right: 6%;
     }
 
-.auth-image {
-  float: left;
-  width: 200px;
-  height: auto;
-  margin-top: 10px;
-  margin-right: 25px;
-}
+
 
 /* contact page */
 
@@ -327,9 +321,16 @@ input[type=submit] {
 
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 768px) {
   .main-section{
-    
+   width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 980px) {
+  .main-section {
+    width: 100%;
   }
 }
 
